@@ -1,0 +1,143 @@
+.our-menu,
+.explorebtn,
+.articles-btn,
+.browse-menu-btn,
+.learn-more-btn,
+.different-btn,
+.testimonials-btn {
+  cursor: pointer;
+  border: none;
+  font-weight: 900;
+  transition: .5s;
+  background: white;
+
+  a {
+    color: #130e0a;
+
+  }
+}
+
+.our-menu {
+  min-width: 135px;
+  padding: 1rem;
+}
+
+.explorebtn {
+  padding: 22px;
+  margin-top: 26px;
+  max-width: 240px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: clamp(10px, .9vw, 18px);
+}
+
+
+.articles-btn,
+.browse-menu-btn {
+  border: 2px solid #130e0a;
+  padding: 25px 0 ;
+max-width: 240px;
+width: 100%;
+  font-size: clamp(14px, 0.9vw, 18px);
+  line-height: 1.125em;
+}
+
+/* .articles-btn {
+  width: 100%;
+  max-width: 210px !important;
+} */
+
+.our-menu:hover,
+.explorebtn:hover,
+.articles-btn:hover,
+.browse-menu-btn:hover,
+.learn-more-btn:hover,
+.different-btn:hover,
+.testimonials-btn:hover {
+  background-color: #d69e3d !important;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.our-menu:hover a,
+.explorebtn:hover a,
+.articles-btn:hover a,
+.browse-menu-btn:hover a {
+  color: #ffffff;
+}
+
+.articles-btn:hover {
+  border-color: #d69e3d;
+}
+
+
+.browse-menu-btn {
+  border: none;
+  margin: 30px 0;
+  background-color: #130e0a;
+}
+
+
+
+.learn-more-btn {
+  background-color: #130e0a;
+  line-height: 1.125em;
+  font-size: clamp(12px, 1vw, 18px);
+  margin-top: 1rem;
+  min-width: 170px;
+  padding: 23px 0;
+
+  a {
+    color: white;
+  }
+}
+
+.view-btn {
+  border-color: white;
+  padding: 23px;
+  max-width: 200px;
+  width: 100%;
+  font-size: clamp(12px, .9vw, 18px);
+  background: none !important;
+  font-weight: 900;
+  transition: .5s;
+  margin-bottom: 0;
+  line-height: 1.125em;
+
+  a {
+    color: white;
+  }
+}
+
+.view-btn:hover {
+  transform: translateY(-3px);
+  background-color: white !important;
+}
+
+.view-btn:hover a {
+  color: #130e0a;
+}
+
+
+.testimonials-btn,
+.different-btn {
+  padding: 24px 0;
+  width: 230px;
+  background-color: white;
+  color: #130e0a;
+  z-index: 1;
+  text-align: center;
+  font-weight: 800;
+  font-family: Alpino, sans-serif;
+  font-size: clamp(10px, 1vw, 18px);
+  line-height: 1.125em;
+}
+
+.different-btn {
+  background-color: #130e0a !important;
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+

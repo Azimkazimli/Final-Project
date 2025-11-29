@@ -1,0 +1,15 @@
+.caffeine-logo {
+    max-width: 200px;
+    flex-shrink: 0;
+margin-left: 0;
+    transition: transform .3s ease;
+}
+
+.caffeine-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.caffeine-logo:hover {
+    transform: translateY(-3px);
+}

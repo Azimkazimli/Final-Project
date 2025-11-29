@@ -1,0 +1,25 @@
+.top-wavy-line {
+  top: -53px;
+}
+
+.bottom-wavy-line {
+  position: absolute;
+  bottom: -10px; 
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+}
+.bottom-wavy,
+.top-wavy {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.bottom-wavy-line,
+.top-wavy-line {
+  position: absolute;
+}
+

@@ -1,0 +1,52 @@
+/* --------------------- FOOTER ---------------------  */
+
+footer {
+  background-color: #130e0a;
+  color: #fff;
+  overflow: hidden;
+  font-family: Alpino, sans-serif;
+}
+
+.footer-bottom {
+  /* border-top: 1px solid #373533; */
+  text-align: center;
+  width: 85%;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.footer-bottom p {
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: #d0c9be;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.footer-bottom p a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+.footer-bottom p a:hover {
+  color: #d69e3d;
+}
+
+/*-------------------- TASTE COFFEE TABLET Design --------------------*/
+@media (max-width: 998px) {
+  .footer-bottom {
+    width: 95%;
+    margin: 1rem auto;
+  }
+}
+
+/*-------------------- TASTE COFFEE MOBILE Design --------------------*/
+@media (max-width: 650px) {
+  footer {
+    padding-top: 60px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
+}

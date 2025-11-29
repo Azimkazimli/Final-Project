@@ -1,0 +1,1696 @@
+.heroSection {
+  position: relative;
+}
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background-image: url("https://cdn.prod.website-files.com/63457232aa921b4c927c7246/6345e0d65745f42985221831_coffeebar-x-home-hero_1_11zon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  min-height: 1000px;
+  position: relative;
+}
+
+.caffeineContent {
+  position: relative;
+  display: flex;
+  color: #ffffff;
+  margin-top: 20px;
+  z-index: 1 !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caffeineTitle {
+  font-family: Alpino, sans-serif;
+  font-weight: 900;
+  font-size: clamp(50px, 3.7vw, 66px);
+  width: 60%;
+  line-height: 1.2;
+}
+
+.caffeineDescription {
+  font-family: Hauora, sans-serif;
+  font-size: clamp(14px, 3vw, 18px);
+  max-width: 620px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+
+.heroLogoWrapper {
+  margin-bottom: 10px;
+  max-width: 250px;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.leftBean {
+  position: absolute;
+  right: 1%;
+  opacity: .29;
+  top: 28%;
+}
+
+.rightBean {
+  position: absolute;
+  left: 0;
+  bottom: 37%;
+}
+
+
+
+/* ====================== TABLET (max-width: 992px) ====================== */
+@media (max-width: 998px) {
+
+  .container {
+    background-position: center;
+    min-height: 830px;
+  }
+
+  .caffeineTitle {
+    width: 100%;
+    font-size: clamp(35px, 3.6vw, 56px);
+
+  }
+
+  .caffeineDescription {
+    max-width: 500px;
+    font-size: clamp(10px, 3vw, 17px);
+
+  }
+
+  .heroLogoWrapper {
+    margin-bottom: 0;
+    max-width: 220px !important;
+
+
+
+  }
+
+  .caffeineContent {
+    gap: 1rem;
+    margin-top: 0;
+
+  }
+
+  .leftBean {
+    max-width: 30px;
+  }
+
+  .rightBean {
+    max-width: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    min-height: 700px;
+  }
+
+  .caffeineContent {
+    padding: 10px;
+  }
+
+  .caffeineTitle {
+    font-size: clamp(25px, 3vw, 38px);
+    width: 65% !important;
+  }
+
+  .caffeineDescription {
+    font-size: clamp(10px, 3.2vw, 16px);
+
+  }
+
+  .heroLogoWrapper {
+    max-width: 200px !important;
+  }
+
+  .caffeineContent {
+    gap: 5px;
+
+  }
+
+  /* 
+  .leftBean {
+    max-width: 60px;
+  }
+
+  .rightBean {
+    max-width: 60px;
+  } */
+}
+
+
+
+
+
+
+/* --------------------- TASTE COFFEE SECTION ---------------------  */
+
+.taste-coffe-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.taste-coffe-container {
+  /* max-width: 1190px; */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taste-coffe-texts {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: end;
+  width: 100%;
+  max-width: 1187px;
+  margin-bottom: 30px;
+  font-family: Alpino, sans-serif;
+  overflow: hidden;
+}
+
+.left-texts h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.111em;
+  color: #d69e3d;
+  margin-bottom: 8px;
+}
+
+.left-texts h2 {
+  font-size: clamp(34px, 2.5vw, 48px);
+  font-weight: 900;
+  width: 100%;
+  color: #130e0a;
+  max-width: 560px;
+  line-height: 1.48em;
+}
+
+.taste-coffe-texts p {
+  max-width: 430px;
+  font-size: clamp(14px, 3vw, 18px) !important;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+
+.taste-coffe-images {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.left-big-image {
+  flex: 0 0 auto;
+  max-width: 590px;
+}
+
+.left-big-image .big-image {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+.right-small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-shrink: 1;
+}
+
+.right-small-images .top-row,
+.right-small-images .bottom-row {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.right-small-images img {
+  max-width: 286px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/*-------------------- TASTE COFFEE TABLET Design --------------------*/
+
+@media (max-width: 998px) {
+  .taste-coffe-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .taste-coffe-texts {
+    width: 94%;
+    padding: 10px 0;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .left-texts h2 {
+    max-width: 90%;
+    font-size: clamp(22px, 4vw, 38px);
+  }
+
+  .right-text {
+    width: 100%;
+  }
+
+  .taste-coffe-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .left-big-image {
+    width: clamp(300px, 45vw, 460px);
+    height: auto;
+  }
+
+  .right-small-images,
+  .bottom-row,
+  .top-row {
+    display: flex;
+  }
+
+  .right-small-images img {
+    width: clamp(130px, 22vw, 200px);
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/*-------------------- TASTE COFFEE MOBILE Design --------------------*/
+
+@media (max-width: 650px) {
+  .taste-coffe-container {
+    width: 100%;
+  }
+
+  .left-texts h4 {
+    font-size: 14px;
+  }
+
+  .left-texts h2 {
+    font-size: clamp(20px, 5vw, 30px);
+    line-height: 1.3em;
+    max-width: 100%;
+  }
+
+  .taste-coffe-texts {
+    margin: 5px;
+    padding: 0 13px;
+    width: 97.7%;
+    background-color: orange;
+  }
+
+  .right-text {
+    width: 100%;
+  }
+
+  .right-text p {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  .left-big-image {
+    width: 100%;
+  }
+
+  .right-small-images {
+    width: 100%;
+  }
+
+  .right-small-images img {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+
+
+/* --------------------- Special Coffee Section ---------------------  */
+.special-coffee-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.special-coffee-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.specialBean1,
+.specialBean2 {
+  position: absolute;
+  opacity: 1;
+  max-width: 98px;
+}
+
+.specialBean1 {
+  top: 9%;
+  right: 44%;
+}
+
+.specialBean2 {
+  top: 7.5%;
+  left: 44.5%;
+}
+
+
+.special-title {
+  text-align: center;
+  z-index: 1 !important;
+
+  font-family: Alpino, sans-serif;
+}
+
+.special-title span {
+  font-size: clamp(14px, 1.1vw, 18px);
+  font-weight: 500;
+  line-height: 1.111em;
+  color: #d69e3d;
+  letter-spacing: 0.5px;
+}
+
+.special-title h2 {
+  color: #130e0a;
+  font-size: clamp(33px, 2.9vw, 48px) !important;
+  margin-top: 8px;
+  font-weight: 900;
+  line-height: 1.28em;
+}
+
+.special-items {
+  display: flex;
+  width: 85%;
+  gap: 1rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.special-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: black;
+}
+
+.special-item img {
+  width: 160px;
+  object-fit: cover;
+}
+
+.special-item h3 {
+  font-size: clamp(12px, 2.9vw, 28px);
+  margin: 1rem 0 !important;
+  font-weight: 900;
+  line-height: 1.286em;
+  text-align: center;
+  color: #130e0a;
+}
+
+.special-item p {
+  font-size: clamp(12px, 2vw, 18px);
+  font-weight: 400;
+  max-width: 339px;
+  text-align: center;
+  line-height: 1.667em;
+  color: #373533;
+}
+
+
+/*-------------------- SPECIAL COFFEE  TABLET Design --------------------*/
+@media (max-width: 998px) {
+
+  .special-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special-title h2 {
+    font-size: clamp(30px, 3vw, 40px) !important;
+  }
+
+  .special-item img {
+    width: 150px;
+    height: auto;
+  }
+
+  .special-item p {
+    font-size: clamp(10px, 2.5vw, 16px) !important;
+    max-width: 420px;
+  }
+
+}
+
+/*-------------------- SPECIAL COFFEE  MOBILE Design --------------------*/
+
+@media (max-width: 650px) {
+
+  .special-title span {
+    font-size: clamp(10px, 2.8vw, 16px) !important;
+  }
+
+  .special-title h2 {
+    font-size: clamp(22px, 4.5vw, 35px) !important;
+    /* line-height: 1.25em; */
+  }
+
+  .special-item img {
+    width: 100px;
+    height: auto;
+  }
+
+  .special-item h3 {
+    margin: 0.4rem 0 !important;
+  }
+
+  .special-title span {
+    font-size: clamp(10px, 1vw, 15px);
+  }
+
+}
+
+
+
+
+/* --------------------- ARTICLES SECTION ---------------------  */
+
+.articles-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.articles-container {
+  width: 83%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-articles {
+  position: absolute;
+  top: 5.8%;
+  left: 6.5%;
+  width: 100%;
+  max-width: 98px;
+}
+
+.articles-header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+  font-family: Alpino, sans-serif;
+  z-index: 1;
+}
+
+.articles-left {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
+
+.articles-subtitle {
+  font-size: clamp(10px, 1.7vw, 18px);
+  font-weight: 500;
+  line-height: 1.111em;
+  color: #c89a3b;
+  margin-bottom: 8px;
+}
+
+.articles-title {
+  font-size: clamp(35px, 2.7vw, 50px);
+  font-weight: 900;
+  line-height: 1.28em;
+  color: #171412;
+}
+
+.articles-grid {
+  display: flex;
+  gap: 1rem;
+  width: 95%;
+}
+
+.article-card {
+  flex: 1;
+  max-width: 595px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.article-card:hover .article-img {
+  transform: scale(1.04);
+  filter: brightness(0.4);
+}
+
+.article-content {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  right: 4%;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-family: Alpino, sans-serif;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 9px;
+  font-size: clamp(14px, 1.1vw, 18px);
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.article-text {
+  font-size: clamp(15px, 1.5vw, 28px) !important;
+  font-weight: 900;
+  line-height: 1.286em;
+  transition: 0.5s;
+}
+
+.article-card:hover .article-text {
+  color: #c89a3b;
+}
+
+
+/*-------------------- ARTICLES TABLET Design --------------------*/
+
+@media (max-width: 998px) {
+
+  .articles-container {
+    width: 90%;
+  }
+
+  .coffee-articles {
+    left: 0;
+    top: 7%;
+    width: 100%;
+    max-width: 78px;
+  }
+
+  .articles-header {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .articles-title {
+    font-size: clamp(26px, 3vw, 46px);
+  }
+
+  .articles-grid {
+    width: 100%;
+  }
+
+  .articles-btn {
+    max-width: 200px !important;
+    width: 100% !important;
+    font-size: clamp(11px, 0.9vw, 16px) !important;
+    padding: 22px 0 !important;
+  }
+
+  .article-card {
+    max-width: 100%;
+  }
+
+  .article-meta {
+    font-size: clamp(10px, 1.1vw, 16px);
+  }
+
+  .article-text {
+    font-size: clamp(11px, 1.7vw, 25px) !important;
+  }
+}
+
+
+/*-------------------- ARTICLES MOBILE Design --------------------*/
+
+@media (max-width: 650px) {
+
+  .articles-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .articles-btn {
+    max-width: 60% !important;
+    font-size: clamp(9px, 1.6vw, 14px) !important;
+    padding: 20px 0 !important;
+  }
+
+  .coffee-articles {
+    top: 4%;
+    max-width: 58px;
+  }
+
+  .articles-header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .articles-title {
+    font-size: clamp(17px, 3.8vw, 40px);
+  }
+
+  .articles-subtitle {
+    text-align: center;
+  }
+
+  .articles-grid {
+    flex-direction: column;
+  }
+
+  .article-card {
+    overflow: hidden;
+  }
+
+  .article-meta {
+    gap: 4px;
+    margin-bottom: 7px;
+    font-size: clamp(8px, 2.5vw, 12px);
+  }
+
+  .article-meta {
+    font-size: clamp(9px, 1.7vw, 14px);
+  }
+
+  .article-text {
+    font-size: clamp(9px, 2.5vw, 20px) !important;
+  }
+
+  .article-content {
+    bottom: 4% !important;
+  }
+}
+
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+/* --------------------- DIFFERENT SECTION ---------------------  */
+
+.different-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.different-container {
+  width: 100%;
+  max-width: 1268px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.coffee-small-label {
+  font-size: clamp(10px, 1vw, 18px);
+  font-weight: 500;
+  line-height: 1.111em;
+  font-family: Alpino, sans-serif;
+  color: #c89a3b;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.makes-title {
+  color: #130e0a;
+  font-family: Alpino, sans-serif;
+  font-weight: 900;
+  font-size: clamp(35px, 2.5vw, 48px);
+  line-height: 1.28em;
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.coffee-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.coffee-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 470px;
+  max-width: 450px;
+  flex-shrink: 1;
+  gap: 1rem;
+}
+
+.coffee-card {
+  text-align: left;
+}
+
+.coffee-card-title {
+  font-size: clamp(15px, 1.2vw, 22px);
+  margin-bottom: 12px;
+  color: #130e0a;
+  font-family: Alpino, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 1.682em;
+}
+
+.coffee-card-text {
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.5;
+  color: #373533;
+  margin-bottom: 20px;
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.coffee-border {
+  border-bottom: 1px solid #d0c9be;
+}
+
+.coffee-image-wrap {
+  width: 100%;
+  max-width: 456px;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+.coffee-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.decor-left,
+.decor-right,
+.decor-bottom {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+}
+
+.decor-left {
+  max-width: 98px;
+  bottom: 32%;
+  left: -1%;
+}
+
+.decor-right {
+  max-width: 98px;
+  top: 20%;
+  right: 17%;
+}
+
+.decor-bottom {
+  max-width: 520px;
+  bottom: 7%;
+  right: 2%;
+}
+
+
+/* ===================== TABLET (max-width: 998px) ===================== */
+
+@media (max-width: 998px) {
+
+  .different-container {
+    width: 90%;
+  }
+
+  .makes-title {
+    width: 65%;
+    font-size: clamp(28px, 3vw, 40px);
+  }
+
+  .coffee-grid {
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .coffee-column {
+    width: 100%;
+    max-width: 600px;
+    min-height: 0;
+    margin-bottom: 0 !important;
+  }
+
+  .coffee-card {
+    text-align: center;
+  }
+
+  .coffee-card-text {
+    max-width: 100%;
+  }
+
+  .coffee-image-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .coffee-image {
+    width: 100%;
+  }
+
+  .different-btn {
+    margin-top: 1rem !important;
+  }
+
+  .decor-left {
+    max-width: 90px;
+    bottom: 10%;
+    left: -1%;
+  }
+
+  .decor-right {
+    max-width: 90px;
+    right: 10%;
+    top: 13%;
+  }
+
+  .decor-bottom {
+    max-width: 420px;
+    right: 2%;
+    bottom: 8%;
+  }
+}
+
+
+/* ===================== MOBILE (max-width: 650px) ===================== */
+
+@media (max-width: 650px) {
+
+  .coffee-small-label {
+    font-size: clamp(8px, 2.5vw, 14px);
+  }
+
+  .makes-title {
+    font-size: clamp(17px, 3.5vw, 35px);
+  }
+
+  .coffee-card {
+    max-width: 450px;
+  }
+
+  .coffee-card-title {
+    font-size: clamp(10px, 3vw, 16px);
+  }
+
+  .coffee-card-text {
+    margin-bottom: 1rem;
+  }
+
+  .coffee-image-wrap {
+    max-width: 450px;
+  }
+
+  .coffee-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .different-btn {
+    max-width: 180px;
+  }
+
+  .decor-left {
+    max-width: 68px;
+    bottom: 20%;
+    left: 0;
+  }
+
+  .decor-right {
+    max-width: 68px;
+    top: 15%;
+    right: 0;
+  }
+
+  .decor-bottom {
+    max-width: 260px;
+    right: 0;
+    bottom: 7%;
+  }
+}
+
+
+
+
+
+/* --------------------- ABOUT SECTION ---------------------  */
+.about-section {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  position: relative;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plant,
+.smallBean {
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+}
+
+.plant {
+  right: 0;
+  bottom: 0;
+  max-width: 385px;
+  opacity: 1;
+}
+
+.smallBean {
+  top: 10%;
+  right: 22%;
+  max-width: 88px;
+}
+
+.about-image-wrap {
+  max-width: 596px;
+  overflow: hidden;
+}
+
+.about-image-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-content {
+  font-family: Alpino, sans-serif;
+  margin-left: 20px;
+  z-index: 1 !important;
+  padding: 20px;
+}
+
+.about-small-label {
+  font-size: clamp(10px, 1.1vw, 18px);
+  font-weight: 500;
+  line-height: 1.111em;
+  color: #d69e3d;
+  letter-spacing: 0.5px;
+}
+
+.about-title {
+  color: #130e0a;
+  margin-top: 10px;
+  font-size: clamp(35px, 4.1vw, 50px) !important;
+  line-height: 1.28em;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: #373533;
+  font-weight: 400;
+  font-size: clamp(10px, 2vw, 18px) !important;
+  line-height: 1.667em;
+  margin-bottom: 26px;
+}
+
+/*-------------------- ABOUT SECTION  TABLET Design --------------------*/
+
+@media (max-width: 998px) {
+
+  .about-section {
+    padding: 0;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .plant {
+    right: 0;
+    top: 14%;
+    max-width: 260px;
+  }
+
+  .smallBean {
+    top: 5%;
+    left: 12%;
+    max-width: 68px;
+  }
+
+
+  .about-image-wrap {
+    width: 100%;
+    height: auto;
+    order: 2;
+    z-index: 1;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    margin-left: 0;
+    order: 1;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .about-title {
+    font-size: clamp(24px, 5.5vw, 40px);
+    line-height: 1.3em;
+    margin-bottom: 25px;
+
+  }
+
+  .about-text {
+    font-size: clamp(10px, 2vw, 18px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .learn-more-btn {
+    margin: 0 auto;
+    padding: 20px;
+    width: 40% !important;
+  }
+
+  .about-small-label {
+    font-size: clamp(10px, 1.6vw, 16px);
+  }
+
+}
+
+
+/*-------------------- ABOUT SECTION MOBILE DESIGN --------------------*/
+
+@media (max-width: 650px) {
+
+  .plant {
+    max-width: 200px;
+  }
+
+  .smallBean {
+    left: 9%;
+    max-width: 58px;
+  }
+
+  .about-title {
+    font-size: clamp(22px, 5vw, 34px) !important;
+    line-height: 1.22em;
+  }
+
+  .about-text {
+    font-size: clamp(10px, 2.2vw, 16px);
+  }
+
+  .learn-more-btn {
+    width: 65% !important;
+    font-size: 12px !important;
+  }
+}
+
+
+
+
+/* --------------------- Testimonials Section ---------------------  */
+
+.testimonials-section {
+  background: #130e0a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.testimonials-container {
+  width: 100%;
+  max-width: 1268px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.testimonials-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+  font-family: Alpino, sans-serif;
+  text-transform: uppercase;
+}
+
+.small-label {
+  font-size: clamp(10px, 1.1vw, 18px);
+  font-weight: 500;
+  line-height: 1.111em;
+  color: #d69e3d;
+  letter-spacing: 0.5px;
+}
+
+.customers {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 620px;
+  font-size: clamp(30px, 3vw, 48px);
+  font-weight: 900;
+  line-height: 1.28em;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.testimonials-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 1 !important;
+  flex: 1 1 clamp(250px, 30%, 388px);
+  max-width: 388px;
+  background-image: linear-gradient(#0000, #0000005e 59%, #000000c7);
+}
+
+.testimonials-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1 !important;
+}
+
+.testimonials-content {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  z-index: 1;
+  font-family: Alpino, sans-serif;
+}
+
+.testimonials-content h3 {
+  font-size: clamp(10px, 1.4vw, 22px);
+  margin-bottom: 6px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.682em;
+}
+
+.testimonials-content p {
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  font-size: clamp(10px, 1.4vw, 18px);
+  font-weight: 400;
+  line-height: 1.667em;
+}
+
+.author {
+  font-weight: 500;
+  font-size: clamp(10px, 1.1vw, 18px);
+  text-transform: uppercase;
+  line-height: 1.111em;
+  letter-spacing: 0.5px;
+}
+
+.deco {
+  position: absolute;
+}
+
+.flower {
+  top: 23%;
+  left: 1%;
+  width: 100%;
+  max-width: 153px;
+}
+
+.beans-up {
+  top: 13.7%;
+  left: 5.3%;
+  max-width: 98px;
+}
+
+.sack {
+  left: 25%;
+  bottom: 10%;
+  max-width: 550px;
+  opacity: 1;
+}
+
+.beans-up-right {
+  top: 24%;
+  right: 20%;
+  width: 100%;
+  max-width: 110px;
+}
+
+.beans-up-bottom {
+  bottom: 20%;
+  right: 9%;
+  width: 100%;
+  max-width: 110px;
+}
+
+
+/*-------------------- Testimonials Section TABLET Design --------------------*/
+
+@media (max-width: 998px) {
+  .customers {
+    font-size: clamp(28px, 3.1vw, 38px) !important;
+    max-width: 440px;
+    margin-bottom: 3px;
+  }
+
+  .testimonials-btn {
+    max-width: 170px;
+    width: 100%;
+  }
+
+  .testimonials-grid {
+    gap: 1rem;
+  }
+
+  .testimonials-card {
+    max-width: 330px;
+  }
+
+  .testimonials-content {
+    bottom: 5%;
+  }
+
+  .small-label {
+    font-size: clamp(10px, 1.1vw, 16px);
+  }
+
+  .testimonials-content h3 {
+    font-size: clamp(9px, 1.3vw, 19px);
+    margin-bottom: 5px;
+    line-height: 1.4em;
+  }
+
+  .testimonials-content p {
+    font-size: clamp(9px, 1.5vw, 16px);
+    margin-bottom: 4px;
+    line-height: 1.4em;
+  }
+
+  .author {
+    font-weight: 500;
+    font-size: clamp(8px, 1.3vw, 16px);
+    text-transform: uppercase;
+    line-height: 1.111em;
+    letter-spacing: 0.5px;
+  }
+
+  .flower {
+    left: 0;
+    max-width: 110px;
+  }
+
+  .beans-up {
+    top: 13%;
+    left: 10%;
+    max-width: 78px;
+  }
+
+  .sack {
+    left: 8%;
+    max-width: 380px;
+    bottom: 13%;
+  }
+
+  .beans-up-right {
+    right: 15%;
+    max-width: 78px;
+  }
+
+  .beans-up-bottom {
+    bottom: 23%;
+    right: 5%;
+    max-width: 78px !important;
+  }
+}
+
+
+/*-------------------- Testimonials Section MOBILE Design --------------------*/
+
+@media (max-width: 650px) {
+
+  .testimonials-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .testimonials-container {
+    width: 90%;
+  }
+
+  .testimonials-btn {
+    font-size: clamp(9px, 1.5vw, 16px) !important;
+    padding: 20px !important;
+  }
+
+  .testimonials-head {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .customers {
+    font-size: clamp(25px, 5.3vw, 38px) !important;
+    margin: 7px auto;
+    max-width: 500px;
+  }
+
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials-card {
+    width: 100%;
+    max-width: 88%;
+  }
+
+  .testimonials-content {
+    bottom: 4%;
+  }
+
+  .testimonials-content h3 {
+    font-size: clamp(9px, 2.2vw, 16px);
+  }
+
+  .testimonials-content p {
+    font-size: clamp(9px, 2.7vw, 16px);
+  }
+
+  .author {
+    font-size: clamp(8px, 2vw, 14px);
+  }
+
+  .small-label {
+    font-size: clamp(9px, 1vw, 16px);
+  }
+
+  .sack {
+    max-width: 270px;
+    bottom: 3%;
+    left: 5%;
+  }
+
+  .flower {
+    top: 6%;
+    left: 5%;
+    max-width: 110px;
+  }
+
+  .beans-up {
+    top: 0;
+    left: 15%;
+    max-width: 60px;
+  }
+
+  .beans-up-bottom {
+    right: 0;
+    bottom: 0;
+    max-width: 60px !important;
+  }
+
+  .beans-up-right {
+    top: 5%;
+    right: 5%;
+    max-width: 60px !important;
+  }
+}
+
+
+
+
+/* --------------------- Nearst Coffee Section ---------------------  */
+
+.nearst-coffee-container {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: linear-gradient(#000000b0, #000000b0), url("https://cdn.prod.website-files.com/63457232aa921b4c927c7246/6346c9a3d7026b048e61ee75_coffeebar-x-our-menu-%26-our-location.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  overflow: hidden;
+}
+
+.nearst-top-wave {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+.nearst-bottom-wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 3;
+}
+
+.nearst-top-wave img,
+.nearst-bottom-wave img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.nearst-content {
+  position: relative;
+  z-index: 4;
+  min-height: 700px;
+  margin: 0 auto;
+  font-family: Alpino, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1220px;
+  padding: 1rem;
+}
+
+.nearst-left,
+.nearst-right {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nearst-small-title {
+  display: inline-block;
+  font-size: clamp(13px, 1vw, 18px);
+  font-weight: 500;
+  line-height: 1.11em;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.nearst-big-title {
+  margin-bottom: 20px;
+  font-weight: 900;
+  line-height: 1.28em;
+  font-size: clamp(30px, 2.6vw, 50px);
+  color: white;
+}
+
+.nearst-divider {
+  width: 1px;
+  height: 225px;
+  background: white;
+  opacity: 0.3;
+}
+
+.nearst-left button,
+.nearst-right button {
+  margin-top: 10px;
+}
+
+
+/*-------------------- NEARST TABLET DESIGN --------------------*/
+
+@media (max-width: 998px) {
+
+  .nearst-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .nearst-divider {
+    height: 1px;
+    width: 90%;
+  }
+
+  .nearst-big-title {
+    font-size: clamp(32px, 2.5vw, 46px);
+  }
+
+  .nearst-small-title {
+    margin-bottom: 6px;
+    font-size: clamp(16px, 1vw, 18px);
+  }
+
+  .nearst-big-title {
+    width: 100%;
+    font-size: clamp(22px, 2.9vw, 36px);
+  }
+
+  .nearst-small-title {
+    font-size: clamp(14px, 1vw, 56px);
+  }
+
+  .explorebtn,
+  .view-btn {
+    width: 100% !important;
+    max-width: 190px !important;
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+}
+
+/*-------------------- NEARST MOBILE DESIGN --------------------*/
+
+@media (max-width: 650px) {
+
+  .nearst-big-title {
+    width: 100%;
+    font-size: clamp(22px, 2.9vw, 36px);
+  }
+
+  .nearst-small-title {
+    font-size: clamp(14px, 1vw, 56px);
+  }
+
+  .explorebtn,
+  .view-btn {
+    width: 100% !important;
+    max-width: 190px !important;
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.category-btn {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  /* əvvəlcə görünməsin */
+  transition: border-bottom 0.3s ease;
+}
+
+.category-btn.active {
+  border-bottom: 2px solid #c79f49;
+  /* alt xətt - istədiyin rəng */
+  color: #c79f49;
+  /* İstəsən rəngi də dəyiş */
+}
+
+
+.css-1bug3cd-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: #fff;
+  background-color: #d69e3d !important;
+}
+
+
+.css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon {
+
+  display: none !important;
+}

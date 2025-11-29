@@ -1,0 +1,236 @@
+.search-page {
+    padding: 120px 0;
+    background: #f4f0e9;
+    min-height: 100vh;
+}
+
+.search-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.search-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-family: Alpino, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.search-input-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 25px auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 2px solid #c89a3b;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    font-family: inherit;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 0 3px rgba(200, 154, 59, 0.25);
+}
+
+.suggestions-box {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #e0d7c3;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.suggestions-box p {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.suggestions-box p:hover {
+    background: #f4f0e9;
+}
+
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 10px 0;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #d6c7a3;
+    background: #f4f0e9;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+}
+
+.filter-buttons button:hover {
+    background: #e4dac7;
+}
+
+.filter-buttons button.active {
+    background: #c89a3b;
+    color: #fff;
+    border-color: #c89a3b;
+}
+
+
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.sort-buttons button {
+    padding: 8px 16px;
+    border-radius: 18px;
+    border: 1px solid #d6c7a3;
+    background: #fdfaf3;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.sort-buttons button:hover {
+    background: #f0e6d2;
+}
+
+.sort-buttons button.active {
+    background: #130e0a;
+    color: #fff;
+    border-color: #130e0a;
+}
+
+
+.search-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.search-items .menu-item {
+    width: 48%;
+}
+
+.no-result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 40px 0;
+}
+
+
+.price-range-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.price-range-box input {
+    width: 120px;
+    padding: 10px 14px;
+    border: 2px solid #c89a3b;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: #fff;
+}
+
+.apply-btn {
+    padding: 10px 20px;
+    background: #c89a3b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.autocomplete-box {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d4c9ae;
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 999;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.autocomplete-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.autocomplete-item:hover {
+    background: #f4f0e9;
+}
+
+.autocomplete-item img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #e7d9be;
+}
+
+.autocomplete-item span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.autocomplete-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.autocomplete-box::-webkit-scrollbar-thumb {
+    background: #c89a3b;
+    border-radius: 10px;
+}

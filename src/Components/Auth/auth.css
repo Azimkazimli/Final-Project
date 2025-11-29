@@ -1,0 +1,269 @@
+.auth-section {
+    padding: 150px 0;
+    background: #f4f0e9;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+}
+
+.auth-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #130e0a;
+    margin-bottom: 1rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.input-row {
+    width: 100%;
+}
+
+
+.input-box label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3b352f;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1.5px solid #d3c7b6;
+    background: #fbf7ef;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.input-box input::placeholder {
+    color: #9b9184;
+    font-size: 13px;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #c89a3b;
+    background: #fffdf7;
+    box-shadow: 0 0 0 2px rgba(200, 154, 59, 0.15);
+}
+
+.auth-extra {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #4b453f;
+}
+
+.remember-me input {
+    width: 14px;
+    height: 14px;
+}
+
+.forgot-link {
+    font-size: 13px;
+    color: #c89a3b;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.auth-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 0;
+    border-radius: 999px;
+    border: none;
+    background: #130e0a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.08s ease,
+        box-shadow 0.2s ease;
+}
+
+.auth-btn:hover {
+    background: #271911;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+.auth-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.auth-switch {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #524a44;
+}
+
+.auth-link {
+    font-weight: 600;
+    color: #c89a3b;
+    margin-left: 4px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.error {
+    color: #e63946;
+    font-size: 13px;
+    margin-top: 2px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    width: 100%;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.alert-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5000;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* .logout-icon {
+    font-size: 22px;
+    color: #c89a3b !important;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: none;
+}
+
+.user-info-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-circle-icon {
+    font-size: 124px !important;
+    color: #c89a3b;
+}
+
+.logged-user-name {
+    font-size: 15px;
+    color: #c89a3b !important;
+    font-weight: 500;
+}
+
+.username {
+    font-size: 14px;
+    opacity: 0.9;
+} */
+
+
+
+.alert-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999999;
+    animation: slideIn 0.25s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(150%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+.remember-me-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remember-me-box input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #c89a3b;
+}
+
+.remember-me-box label {
+    font-size: 14px;
+    color: #4a4a4a;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s ease;
+}
+
+.remember-me-box label:hover {
+    color: #000;
+}
