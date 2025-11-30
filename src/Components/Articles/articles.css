@@ -1,0 +1,224 @@
+/* -----------------------Articles Section-----------------------  */
+
+.articles-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.articles-container {
+    width: 83%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-articles {
+    position: absolute;
+    top: 5.8%;
+    left: 6.5%;
+    width: 100%;
+    max-width: 98px;
+}
+
+.articles-header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+    font-family: Alpino, sans-serif;
+    z-index: 1;
+}
+
+.articles-left {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+.articles-subtitle {
+    font-size: clamp(10px, 1.7vw, 18px);
+    font-weight: 500;
+    line-height: 1.111em;
+    color: #c89a3b;
+    margin-bottom: 8px;
+}
+
+.articles-title {
+    font-size: clamp(35px, 2.7vw, 50px);
+    font-weight: 900;
+    line-height: 1.28em;
+    color: #171412;
+}
+
+.articles-grid {
+    display: flex;
+    gap: 1rem;
+    width: 95%;
+}
+
+.article-card {
+    flex: 1;
+    max-width: 595px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transform-origin: center center;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.article-card:hover .article-img {
+    transform: scale(1.04);
+    filter: brightness(0.4);
+}
+
+.article-content {
+    position: absolute;
+    bottom: 7%;
+    left: 4%;
+    right: 4%;
+    padding: 0.5rem;
+    color: #ffffff;
+    font-family: Alpino, sans-serif;
+}
+
+.article-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 9px;
+    font-size: clamp(14px, 1.1vw, 18px);
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.article-text {
+    font-size: clamp(15px, 1.5vw, 28px) !important;
+    font-weight: 900;
+    line-height: 1.286em;
+    transition: 0.5s;
+}
+
+.article-card:hover .article-text {
+    color: #c89a3b;
+}
+
+/*-------------------- ARTICLES TABLET Design --------------------*/
+
+@media (max-width: 998px) {
+
+    .articles-container {
+        width: 90%;
+    }
+
+    .coffee-articles {
+        left: 0;
+        top: 7%;
+        width: 100%;
+        max-width: 78px;
+    }
+
+    .articles-header {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .articles-title {
+        font-size: clamp(26px, 3vw, 46px);
+    }
+
+    .articles-grid {
+        width: 100%;
+    }
+
+    .articles-btn {
+        max-width: 200px !important;
+        width: 100% !important;
+        font-size: clamp(11px, 0.9vw, 16px) !important;
+        padding: 22px 0 !important;
+    }
+
+    .article-card {
+        max-width: 100%;
+    }
+
+    .article-meta {
+        font-size: clamp(10px, 1.1vw, 16px);
+    }
+
+    .article-text {
+        font-size: clamp(11px, 1.7vw, 25px) !important;
+    }
+}
+
+
+/*-------------------- ARTICLES MOBILE Design --------------------*/
+
+@media (max-width: 650px) {
+
+    .articles-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .articles-btn {
+        max-width: 60% !important;
+        font-size: clamp(9px, 1.6vw, 14px) !important;
+        padding: 20px 0 !important;
+    }
+
+    .coffee-articles {
+        top: 4%;
+        max-width: 58px;
+    }
+
+    .articles-header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .articles-title {
+        font-size: clamp(17px, 3.8vw, 40px);
+    }
+
+    .articles-subtitle {
+        text-align: center;
+    }
+
+    .articles-grid {
+        flex-direction: column;
+    }
+
+    .article-card {
+        overflow: hidden;
+    }
+
+    .article-meta {
+        gap: 4px;
+        margin-bottom: 7px;
+        font-size: clamp(8px, 2.5vw, 12px);
+    }
+
+    .article-meta {
+        font-size: clamp(9px, 1.7vw, 14px);
+    }
+
+    .article-text {
+        font-size: clamp(9px, 2.5vw, 20px) !important;
+    }
+
+    .article-content {
+        bottom: 4% !important;
+    }
+}

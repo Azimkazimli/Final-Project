@@ -190,37 +190,6 @@
 }
 
 
-/* .logout-icon {
-    font-size: 22px;
-    color: #c89a3b !important;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: none;
-}
-
-.user-info-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.user-circle-icon {
-    font-size: 124px !important;
-    color: #c89a3b;
-}
-
-.logged-user-name {
-    font-size: 15px;
-    color: #c89a3b !important;
-    font-weight: 500;
-}
-
-.username {
-    font-size: 14px;
-    opacity: 0.9;
-} */
-
-
 
 .alert-toast {
     position: fixed;

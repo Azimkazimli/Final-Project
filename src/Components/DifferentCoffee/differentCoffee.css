@@ -1,0 +1,245 @@
+/* --------------------- DIFFERENT SECTION ---------------------  */
+
+.different-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.different-container {
+    width: 100%;
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.coffee-small-label {
+    font-size: clamp(10px, 1vw, 18px);
+    font-weight: 500;
+    line-height: 1.111em;
+    font-family: Alpino, sans-serif;
+    color: #c89a3b;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.makes-title {
+    color: #130e0a;
+    font-family: Alpino, sans-serif;
+    font-weight: 900;
+    font-size: clamp(35px, 2.5vw, 48px);
+    line-height: 1.28em;
+    width: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.coffee-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.coffee-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 470px;
+    max-width: 450px;
+    flex-shrink: 1;
+    gap: 1rem;
+}
+
+.coffee-card {
+    text-align: left;
+}
+
+.coffee-card-title {
+    font-size: clamp(15px, 1.2vw, 22px);
+    margin-bottom: 12px;
+    color: #130e0a;
+    font-family: Alpino, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 1.682em;
+}
+
+.coffee-card-text {
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.5;
+    color: #373533;
+    margin-bottom: 20px;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+.coffee-border {
+    border-bottom: 1px solid #d0c9be;
+}
+
+.coffee-image-wrap {
+    width: 100%;
+    max-width: 456px;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.coffee-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.decor-left,
+.decor-right,
+.decor-bottom {
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+.decor-left {
+    max-width: 98px;
+    bottom: 32%;
+    left: -1%;
+}
+
+.decor-right {
+    max-width: 98px;
+    top: 20%;
+    right: 17%;
+}
+
+.decor-bottom {
+    max-width: 520px;
+    bottom: 7%;
+    right: 2%;
+}
+
+
+@media (max-width: 998px) {
+
+    .different-container {
+        width: 90%;
+    }
+
+    .makes-title {
+        width: 65%;
+        font-size: clamp(28px, 3vw, 40px);
+    }
+
+    .coffee-grid {
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .coffee-column {
+        width: 100%;
+        max-width: 600px;
+        min-height: 0;
+        margin-bottom: 0 !important;
+    }
+
+    .coffee-card {
+        text-align: center;
+    }
+
+    .coffee-card-text {
+        max-width: 100%;
+    }
+
+    .coffee-image-wrap {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .coffee-image {
+        width: 100%;
+    }
+
+    .different-btn {
+        margin-top: 1rem !important;
+    }
+
+    .decor-left {
+        max-width: 90px;
+        bottom: 10%;
+        left: -1%;
+    }
+
+    .decor-right {
+        max-width: 90px;
+        right: 10%;
+        top: 13%;
+    }
+
+    .decor-bottom {
+        max-width: 420px;
+        right: 2%;
+        bottom: 8%;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .coffee-small-label {
+        font-size: clamp(8px, 2.5vw, 14px);
+    }
+
+    .makes-title {
+        font-size: clamp(17px, 3.5vw, 35px);
+    }
+
+    .coffee-card {
+        max-width: 450px;
+    }
+
+    .coffee-card-title {
+        font-size: clamp(10px, 3vw, 16px);
+    }
+
+    .coffee-card-text {
+        margin-bottom: 1rem;
+    }
+
+    .coffee-image-wrap {
+        max-width: 450px;
+    }
+
+    .coffee-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .different-btn {
+        max-width: 180px;
+    }
+
+    .decor-left {
+        max-width: 68px;
+        bottom: 20%;
+        left: 0;
+    }
+
+    .decor-right {
+        max-width: 68px;
+        top: 15%;
+        right: 0;
+    }
+
+    .decor-bottom {
+        max-width: 260px;
+        right: 0;
+        bottom: 7%;
+    }
+}

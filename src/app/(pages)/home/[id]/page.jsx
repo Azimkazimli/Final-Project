@@ -139,7 +139,7 @@ export default function DetailPage() {
       <div
         style={{ display: "flex", justifyContent: "center", padding: "40px" }}
       >
-<div>Loading...</div>
+        <div>Loading...</div>
       </div>
     );
 
@@ -190,6 +190,21 @@ export default function DetailPage() {
                 ))}
               </div>
             )}
+
+            <div className="qty-box">
+              <button
+                className="qty-btn"
+                onClick={() => qty > 1 && setQty(qty - 1)}
+              >
+                -
+              </button>
+
+              <span className="qty-number">{qty}</span>
+
+              <button className="qty-btn" onClick={() => setQty(qty + 1)}>
+                +
+              </button>
+            </div>
 
             <div className="wishlist-box">
               <button
@@ -326,7 +341,3 @@ export default function DetailPage() {
     </main>
   );
 }
-
-
-
-

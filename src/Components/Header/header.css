@@ -1,7 +1,6 @@
 header {
     position: fixed;
     top: 0;
-    /* background-color: #000; */
     left: 0;
     right: 0;
     z-index: 999;
@@ -97,7 +96,7 @@ header {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    width: 423px;
+    max-width: 423px;
     align-items: center;
 }
 
@@ -118,22 +117,6 @@ nav ul li a,
     position: relative;
 }
 
-/* nav ul li a::after,
-.pages-link::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #d69e3d;
-    transition: width 0.3s ease;
-} */
-
-/* nav ul li a:hover::after,
-.pages-link:hover::after {
-    width: 100%;
-} */
 
 nav ul li a:hover,
 .pages-link:hover {
@@ -198,7 +181,6 @@ nav ul li a:hover,
 
 .dropdown-column {
     flex: 1;
-    /* padding-left: 0 !important; */
     background-color: #ffffff;
 }
 
@@ -308,131 +290,138 @@ nav ul li a:hover,
 }
 
 @media (max-width: 998px) {
-    .hamburger-icon {
-        display: block;
+    header {
+        background: #000;
     }
 
-    .our-menu {
-        display: block;
+    .header-container {
+        width: 92%;
+        padding: 0.7rem 0;
+    }
+
+    .caffeine-logo {
+        max-width: 150px;
+        margin-left: 0;
     }
 
     nav {
         display: none;
-        transform-origin: top center;
-        transform: scaleY(0);
-        opacity: 0;
-        transition: transform 0.4s ease, opacity 0.4s ease;
-    }
-
-    nav.open {
-        display: block;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 0;
-        max-height: calc(100vh - 100px);
-        overflow-y: auto;
+        background: #f4f0e9;
+        padding: 1.5rem 1rem;
+        animation: menuSlide 0.3s ease forwards;
     }
 
-    nav.open ul {
-        flex-direction: column;
-        justify-content: start;
+    nav.open {
+        display: block;
     }
 
-    nav ul li a,
-    .pages-link {
-        color: #000;
-    }
+    @keyframes menuSlide {
+        from {
+            opacity: 0;
+            transform: scaleY(0);
+        }
 
-    .dropdown-column ul li a {
-        color: #373533;
-        font-weight: 900;
-        line-height: 20px;
+        to {
+            opacity: 1;
+            transform: scaleY(1);
+        }
     }
 
     nav ul {
-        padding: 1rem;
-        align-items: start;
-        gap: 1rem !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+        width: 100%;
     }
 
-
-    .mobile-our-menu {
-        margin: 1rem;
-    }
-
-    @keyframes menuSlideDown {
-        0% {
-            opacity: 0;
-            transform: scaleY(0);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-        }
-    }
-
-    .nav.open.animate {
-        display: block;
-        background-color: #f4f0e9;
-        animation: menuSlideDown 0.4s ease forwards;
-        transform-origin: top center;
-        opacity: 1;
+    nav ul li a {
+        color: #2a2a2a !important;
+        font-size: 17px !important;
+        font-weight: 700;
     }
 
     .dropdown-menu {
-        padding: 0;
         display: none !important;
     }
 
-    .dropdown-mobile {
-        display: flex !important;
-        position: static;
-        overflow: hidden;
-        opacity: 1;
-        background-color: #f4f0e9;
-        animation: mobileDropSlide 0.4s ease forwards;
-        transform-origin: top center;
-        box-shadow: none;
+    .hamburger-icon {
+        display: block;
+        font-size: 2.5rem;
+        color: #d69e3d;
+        cursor: pointer;
     }
 
-    @keyframes mobileDropSlide {
-        0% {
-            opacity: 0;
-            transform: scaleY(0);
-            padding: 0 1rem;
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-            padding: 1rem;
-        }
+    .box {
+        gap: 10px;
     }
 
-    .dropdown-column h3 {
-        color: #130e0a;
-        padding-left: 0;
+    .search-box .search-btn {
+        font-size: 2.7rem;
     }
 
-    .dropdown-icon svg {
-        transform: none !important;
-        transition: transform 0.3s ease;
+    .heart {
+        font-size: 1.7rem;
     }
 
-    .open-pages .dropdown-icon svg {
-        transform: rotate(-180deg) !important;
+    .btn-cart {
+        width: 40px;
+        height: 40px;
     }
 
-    .pages-menu-item::after {
+    .icon-cart {
+        width: 22px;
+        height: 27px;
+    }
+
+    .user-circle-icon {
+        font-size: 2rem;
+    }
+
+    .logged-user-name {
         display: none;
+    }
+
+    .user-info-box {
+        gap: 4px;
     }
 }
 
 
+@media (max-width: 650px) {
 
+    .header-container {
+        width: 94%;
+    }
+
+    .caffeine-logo {
+        max-width: 140px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .hamburger-icon {
+        font-size: 2.2rem;
+    }
+
+    .heart {
+        font-size: 1.5rem;
+    }
+
+    .search-btn {
+        font-size: 2.4rem !important;
+    }
+
+    .btn-cart {
+        width: 38px;
+        height: 38px;
+    }
+}
 
 .heart-icon {
     margin-left: 18px;
@@ -499,7 +488,6 @@ nav ul li a:hover,
     color: #d69e3d;
 }
 
-/* ALERT */
 .alert-toast {
     position: fixed;
     top: 20px;
@@ -543,26 +531,40 @@ nav ul li a:hover,
 
 
 .logout-icon {
-  font-size: 2rem !important;
+    font-size: 2rem !important;
     color: #c89a3b;
-  cursor: pointer;
-  margin-left: 10px;
-  transition: none; 
+    cursor: pointer;
+    margin-left: 10px;
+    transition: none;
 }
 
 .user-info-box {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .user-circle-icon {
-  font-size: 2.2rem;
+    font-size: 2.2rem;
     color: #c89a3b !important;
 }
 
 .logged-user-name {
-  font-size: 15px;
+    font-size: 15px;
     color: #c89a3b;
-  font-weight: 500;
+    font-weight: 500;
 }
+
+
+header {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #373533;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+}
+
+
+

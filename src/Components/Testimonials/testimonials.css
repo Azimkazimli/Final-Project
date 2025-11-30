@@ -1,0 +1,310 @@
+/* --------------------- Testimonials Section ---------------------  */
+
+.testimonials-section {
+    background: #130e0a !important;
+    padding-top: 160px;
+    padding-bottom:160px;
+    position: relative;
+}
+
+.testimonials-container {
+    width: 100%;
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.testimonials-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+    font-family: Alpino, sans-serif;
+    text-transform: uppercase;
+}
+
+.small-label {
+    font-size: clamp(10px, 1.1vw, 18px);
+    font-weight: 500;
+    line-height: 1.111em;
+    color: #d69e3d;
+    letter-spacing: 0.5px;
+}
+
+.customers {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 620px;
+    font-size: clamp(30px, 3vw, 48px);
+    font-weight: 900;
+    line-height: 1.28em;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonials-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1 !important;
+    flex: 1 1 clamp(250px, 30%, 388px);
+    max-width: 388px;
+    background-image: linear-gradient(#0000, #0000005e 59%, #000000c7);
+}
+
+.testimonials-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1 !important;
+}
+
+.testimonials-content {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    z-index: 1;
+    font-family: Alpino, sans-serif;
+}
+
+.testimonials-content h3 {
+    font-size: clamp(10px, 1.4vw, 22px);
+    margin-bottom: 6px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.682em;
+}
+
+.testimonials-content p {
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    font-size: clamp(10px, 1.4vw, 18px);
+    font-weight: 400;
+    line-height: 1.667em;
+}
+
+.author {
+    font-weight: 500;
+    font-size: clamp(10px, 1.1vw, 18px);
+    text-transform: uppercase;
+    line-height: 1.111em;
+    letter-spacing: 0.5px;
+}
+
+.deco {
+    position: absolute;
+}
+
+.flower {
+    top: 23%;
+    left: 1%;
+    width: 100%;
+    max-width: 153px;
+}
+
+.beans-up {
+    top: 13.7%;
+    left: 5.3%;
+    max-width: 98px;
+}
+
+.sack {
+    left: 25%;
+    bottom: 10%;
+    max-width: 550px;
+    opacity: 1;
+}
+
+.beans-up-right {
+    top: 24%;
+    right: 20%;
+    width: 100%;
+    max-width: 110px;
+}
+
+.beans-up-bottom {
+    bottom: 20%;
+    right: 9%;
+    width: 100%;
+    max-width: 110px;
+}
+
+
+/*-------------------- Testimonials Section TABLET Design --------------------*/
+
+@media (max-width: 998px) {
+    .customers {
+        font-size: clamp(28px, 3.1vw, 38px) !important;
+        max-width: 440px;
+        margin-bottom: 3px;
+    }
+
+    .testimonials-btn {
+        max-width: 170px;
+        width: 100%;
+    }
+
+    .testimonials-grid {
+        gap: 1rem;
+    }
+
+    .testimonials-card {
+        max-width: 330px;
+    }
+
+    .testimonials-content {
+        bottom: 5%;
+    }
+
+    .small-label {
+        font-size: clamp(10px, 1.1vw, 16px);
+    }
+
+    .testimonials-content h3 {
+        font-size: clamp(9px, 1.3vw, 19px);
+        margin-bottom: 5px;
+        line-height: 1.4em;
+    }
+
+    .testimonials-content p {
+        font-size: clamp(9px, 1.5vw, 16px);
+        margin-bottom: 4px;
+        line-height: 1.4em;
+    }
+
+    .author {
+        font-weight: 500;
+        font-size: clamp(8px, 1.3vw, 16px);
+        text-transform: uppercase;
+        line-height: 1.111em;
+        letter-spacing: 0.5px;
+    }
+
+    .flower {
+        left: 0;
+        max-width: 110px;
+    }
+
+    .beans-up {
+        top: 13%;
+        left: 10%;
+        max-width: 78px;
+    }
+
+    .sack {
+        left: 8%;
+        max-width: 380px;
+        bottom: 13%;
+    }
+
+    .beans-up-right {
+        right: 15%;
+        max-width: 78px;
+    }
+
+    .beans-up-bottom {
+        bottom: 23%;
+        right: 5%;
+        max-width: 78px !important;
+    }
+}
+
+
+/*-------------------- Testimonials Section MOBILE Design --------------------*/
+
+@media (max-width: 650px) {
+
+    .testimonials-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .testimonials-container {
+        width: 90%;
+    }
+
+    .testimonials-btn {
+        font-size: clamp(9px, 1.5vw, 16px) !important;
+        padding: 20px !important;
+    }
+
+    .testimonials-head {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .customers {
+        font-size: clamp(25px, 5.3vw, 38px) !important;
+        margin: 7px auto;
+        max-width: 500px;
+    }
+
+    .testimonials-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-card {
+        width: 100%;
+        max-width: 88%;
+    }
+
+    .testimonials-content {
+        bottom: 4%;
+    }
+
+    .testimonials-content h3 {
+        font-size: clamp(9px, 2.2vw, 16px);
+    }
+
+    .testimonials-content p {
+        font-size: clamp(9px, 2.7vw, 16px);
+    }
+
+    .author {
+        font-size: clamp(8px, 2vw, 14px);
+    }
+
+    .small-label {
+        font-size: clamp(9px, 1vw, 16px);
+    }
+
+    .sack {
+        max-width: 270px;
+        bottom: 3%;
+        left: 5%;
+    }
+
+    .flower {
+        top: 6%;
+        left: 5%;
+        max-width: 110px;
+    }
+
+    .beans-up {
+        top: 0;
+        left: 15%;
+        max-width: 60px;
+    }
+
+    .beans-up-bottom {
+        right: 0;
+        bottom: 0;
+        max-width: 60px !important;
+    }
+
+    .beans-up-right {
+        top: 5%;
+        right: 5%;
+        max-width: 60px !important;
+    }
+}

@@ -54,14 +54,12 @@ export default function RootLayout({ children }) {
           href="https://cdn.prod.website-files.com/63457232aa921b4c927c7246/634ed444ed422644f0dd2ff6_coffeebar-x-webclip.svg"
         />
 
-        <body className="flex flex-col justify-between h-[100vh]">
+        <body className="flex flex-col justify-between h-[100vh]"   cz-shortcut-listen="true">
           <UserProvider>
-            {/* LOADING BURADA YALNIZ CONTENTİ ƏHATƏ EDİR */}
             <ClientLayoutWrapper>
               {children}
             </ClientLayoutWrapper>
 
-            {/* SSR Components */}
             <Header />
             <Footer />
           </UserProvider>
