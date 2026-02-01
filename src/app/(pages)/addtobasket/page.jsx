@@ -65,7 +65,7 @@ export default function AddToBasketPage() {
       )}
 
       <section className="basket-section">
-        <h1 className="basket-title">Your Cart</h1>
+        <h1 className="basket-title">Your Cajdwhih wbhuerubherugureryvrygrt</h1>
 
         {basketData.length === 0 ? (
           <p className="empty-basket-text">Your basket is empty.</p>
